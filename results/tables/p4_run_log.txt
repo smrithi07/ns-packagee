@@ -1,0 +1,7 @@
+seed=0 batch=1024 p_level=mid p={'quantized': 0.95, 'adapter': 0.9, 'finetune': 0.4, 'merge': 0.3}
+Sources with >=1 descendant: 25,324 (>= 100 descendants: 1,628); descendant pass 1.9s
+Timing fit on 200 sources: sec = 0.0003 + 1.18e-05 * n_edges
+Estimated total at R=1000 for all sources: 0.4 min
+-> R=1000 for all sources: 25,324 sources at R=1000, 0 at R=300
+Simulation wall time: 0.4 min
+Saved 25,324 sources -> results/tables/p4_sources.csv

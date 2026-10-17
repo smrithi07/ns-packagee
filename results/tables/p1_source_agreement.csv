@@ -1,0 +1,2 @@
+sample_n,seed,rows_with_lineage,both,tags_only,bm_only,parent_agree_both,parent_agree_either,parent_relation_agree_both
+50000,42,14234,14182,52,0,0.996756451840361,0.9931150765772095,0.996756451840361

@@ -1,0 +1,56 @@
+Graph: 412,157 nodes, 426,324 edges
+
+== DAG check: is_dag = True ==
+
+== Depth (hops from nearest root; in-dataset nodes; missing parents excluded) ==
+  max 15, mean 1.84, median 2; longest-path max 151
+family  llama    qwen  mistral  gemma  multi     all
+depth                                               
+0          54     209       32    327      0     622
+1       24982  115131     9723  41489     40  191365
+2       27138   71923    11814  18966     45  129886
+3       11782   38001     7052  12832      6   69673
+4        3259    6411     2453   2198      5   14326
+5         880     790      931    439      3    3043
+6         296     256      303    300      2    1157
+7         150      57      103    281      5     596
+8          95      42       68    284      4     493
+9          74      25       44    216      1     360
+10         39      18       30    129      0     216
+11         17      24       17     60      0     118
+12         11      31        7     33      0      82
+13          3      15        8     19      0      45
+14          0       8        4      4      0      16
+15          0       2        0      1      0       3
+
+== Merge share ==
+  merge edges: 24,779 / 426,324 = 5.81%
+  merge children: 9,835 / 412,001 in-dataset nodes = 2.39%; mean merge in-degree 2.52
+
+== Weakly connected components ==
+  count 530; largest 250,468 (60.77%); top 5 sizes [250468, 32565, 30657, 25101, 14306]
+  without merge edges: count 10,613; largest 32,561 (7.90%)
+
+== Out-degree by edge type (over 25,324 nodes with >=1 child) ==
+ relation  edges  parents_with_type  mean_all_parents  mean_nonzero  median_nonzero  p90_nonzero  p99_nonzero   max                          max_parent
+  adapter 188233               2549              7.43         73.85            2.00        25.00       817.52 32473                   Qwen/Qwen1.5-0.5B
+ finetune 129292               5929              5.11         21.81            1.00        11.00       583.80  4493         unsloth/Qwen2.5-7B-Instruct
+quantized  84020              20087              3.32          4.18            2.00         5.00        40.00  1480                    Qwen/Qwen3.8-27B
+    merge  24779               5520              0.98          4.49            1.00         9.00        41.62   413 meta-llama/Meta-Llama-3-8B-Instruct
+      all 426324              25324             16.83         16.83            2.00         8.00       146.00 32534                   Qwen/Qwen1.5-0.5B
+
+== Table 1 ==
+ family  roots  nodes  edges  adapter_share  finetune_share  quantized_share  merge_share  merge_children  depth_max  depth_median  depth_longest_max  wcc_count  largest_wcc_share  bulk_nodes  downloads_30d  downloads_all_time
+  llama     54  68780  73985          0.270           0.389            0.224        0.117            3372     13.000         2.000            151.000     37.000              0.980        1041       33659240          1263326877
+   qwen    209 232943 237039          0.495           0.294            0.183        0.028            2372     15.000         2.000             29.000    172.000              0.266       39704      504904891          5385256689
+mistral     32  32589  36238          0.262           0.263            0.298        0.176            2710     14.000         2.000             58.000     18.000              0.928           0       18219465           577778453
+  gemma    327  77578  78839          0.524           0.270            0.170        0.037            1306     15.000         1.000             58.000    318.000              0.323       14889       91751847          1066684436
+  multi      0    111    223          0.009           0.067            0.085        0.839              75      9.000         2.000             47.000        NaN                NaN           0          22175              430364
+    all    622 412001 426324          0.442           0.303            0.197        0.058            9835     15.000         2.000            151.000    530.000              0.608       55634      648557618          8293476819
+
+Figure 1 root: mistralai/Mistral-Large-Instruct-2407 (mistral), 87 nodes
+
+== Longest path: 151 hops, meta-llama/Meta-Llama-3-8B-Instruct -> jaspionjader/bh-64 ==
+  edge types: {'merge': 141, 'finetune': 10}
+  authors (9 unique): jaspionjader 84%, nbeerbower 7%, Casual-Autopsy 3%, mlabonne 2%, flammenai 1%
+  single-author dominated (>50%): True

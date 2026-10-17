@@ -1,0 +1,5 @@
+relation,p_low,p_mid,p_high,source
+quantized,0.8,0.95,1.0,"Quantization is a near-copy of the weights; Egashira et al., NeurIPS 2024, 'Exploiting LLM Quantization' (TO VERIFY)"
+adapter,0.7,0.9,1.0,"PEFT/LoRA retains backdoors: NAACL Findings 2024; 'Why LoRA Fails to Forget', arXiv 2601.06305"
+finetune,0.1,0.4,0.8,"Full fine-tuning forgets more than PEFT; upper bound from TransTroj, arXiv 2401.15883"
+merge,0.1,0.3,0.9,"Standard backdoors <20% ASR after merging: BadMerging, arXiv 2408.07362; merge-targeted ~98%: LoBAM, arXiv 2411.16746"

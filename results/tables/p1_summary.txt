@@ -1,0 +1,60 @@
+Rows: 3,161,599  unique ids: 3,161,594
+
+== Source agreement on 50,000-row random sample (seed=42) ==
+rows with lineage in either source: 14,234
+  both: 14,182  tags only: 52  baseModels only: 0
+  parent-set agreement (rows with both):        99.6756%
+  parent-set agreement (rows with either):      99.3115%
+  parent+relation agreement (rows with both):   99.6756%
+  relation agreement | same parents:            100.0000%
+-> primary source: baseModels (fallback tags only where primary is empty)
+
+All edges: 931,285  (from fallback tags: 3,854)
+Saved full edge list (all families, incl. unknown): edges_full.csv
+
+Cycles: 1 non-trivial SCC(s), 4 edges inside; dropping 1 edge(s) whose parent postdates the child:
+  Sorawiz/MistralCreative-24B -> Sorawiz/MistralCreative-24B-Chat (merge)
+
+== Subgraph: 412,157 nodes, 426,324 edges ==
+Edges by relation:
+  adapter      188,233  (44.2%)
+  finetune     129,292  (30.3%)
+  quantized     84,020  (19.7%)
+  merge         24,779  (5.8%)
+Unknown-relation edges dropped from subgraph: 18 (children reachable only via unknown edges, excluded: 18)
+Edges by source: {'baseModels': 426219, 'tags': 105} (tag fallback edges in subgraph: 105)
+
+Bulk uploads (author >= 1000 children of one parent): 55,634 edges, 55,634 child nodes, 7 parents
+  bulk children with their own children: 0
+
+Roots per family:
+  llama        54
+  qwen        209
+  mistral      32
+  gemma       327
+
+Nodes per family (in-dataset; 'multi' = reachable from >=2 families):
+  qwen       232,943
+  gemma       77,578
+  llama       68,780
+  mistral     32,589
+  multi          111
+Nodes reachable from each family (overlapping):
+  llama       68,852
+  qwen       232,999
+  mistral     32,658
+  gemma       77,614
+
+Missing parents (not in dataset, kept as nodes): 156
+  edges from missing parents: 535
+Edges from in-dataset parents outside the subgraph (dropped): 9,990
+Cross-family merge children: 75  cross-family merge edges: 187  of 24,779 merge edges
+Missing parents with a root-family prefix (anywhere): 27; their direct children not already in subgraph: 79
+
+== createdAt: top 5 days (all models) ==
+  2022-03-02    29,570
+  2026-01-15     5,617
+  2026-01-05     5,592
+  2024-09-09     5,374
+  2026-01-04     5,208
+Subgraph nodes on 2022-03-02: 0  null createdAt: 156 (incl. missing parents)
