@@ -1,0 +1,3 @@
+graph,edges,largest_wcc_frac,largest_wcc_frac_nomerge,cross_edges_dropped
+all edges,931057,0.44685853357600247,0.046303942030767535,24346
+cross-modality dropped,906711,0.3400275811773834,0.04622656209421908,24346

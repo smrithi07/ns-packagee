@@ -1,0 +1,3 @@
+condition,anc_mean,anc_median,anc_p90,anc_max,share_multi_root,share_multi_root_of_children
+with merges,2.4248200916475247,1.0,3.0,661,0.032180513611978837,0.033802042218315384
+merges removed,1.3689252774812726,1.0,3.0,39,5.299995654003564e-06,5.663572468241517e-06

@@ -1,0 +1,48 @@
+
+Cycles: 10 non-trivial SCC(s), 25 edges inside; dropping 10 edge(s) whose parent postdates the child:
+  weiren119/distilhubert-finetuned-finetuned-gtzan -> weiren119/distilhubert-finetuned-gtzan (finetune)
+  quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU-v2 -> quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU (finetune)
+  mHossain/bengali_pos_v1_400000 -> mHossain/bengali_pos_v1_300000 (finetune)
+  BexRedpill/distilbert-on-polarity-yelp-reviews -> BexRedpill/distilbert-on-polarity-yelp-reviews-epoch-2 (finetune)
+  Wonder-Griffin/JudgeLLM2 -> Wonder-Griffin/Judge-GPT2 (finetune)
+  Sorawiz/MistralCreative-24B -> Sorawiz/MistralCreative-24B-Chat (merge)
+  manifestasi/whisper-tiny-manifestasi-indo -> manifestasi/whisper-tiny-manifestasi-indo-v2 (finetune)
+  liam-mnlp/first-mcqa-model -> liam-mnlp/MNLP_M2_mcqa_model (finetune)
+  orionshaw777/codeparrot-ds -> orionshaw777/gpt2-belle-sft (finetune)
+  irfan0858/chatbotDema -> irfan0858/Qw-it (finetune)
+Full graph: 943,397 nodes, 931,057 edges (unknown excluded: 218); by relation {'finetune': 357140, 'adapter': 334936, 'quantized': 190771, 'merge': 48210}
+
+== (1) Ancestor counts ==
+  with merges     mean 2.42  median 1  p90 3  max 661  >=2 roots: 3.218% of nodes (3.380% of non-roots)
+  merges removed  mean 1.37  median 1  p90 3  max 39  >=2 roots: 0.001% of nodes (0.001% of non-roots)
+  f=0.0: anc mean 1.369  p90 3.0  >=2 roots 0.001%
+  f=0.2: anc mean 1.421  p90 3.0  >=2 roots 0.470%
+  f=0.4: anc mean 1.510  p90 3.0  >=2 roots 1.198%
+  f=0.6: anc mean 1.671  p90 3.0  >=2 roots 1.958%
+  f=0.8: anc mean 1.974  p90 3.0  >=2 roots 2.659%
+  f=1.0: anc mean 2.425  p90 3.0  >=2 roots 3.218%
+
+== (2) Cross-modality robustness ==
+  node groups: {'unknown': 445788, 'text': 328821, 'image': 107423, 'multimodal': 32221, 'audio': 29144}
+  cross-modality edges (both known, groups differ): 24,346 of 931,057; merge among them: 826
+  by group pair: multimodal->text 16,336, text->multimodal 2,313, text->audio 1,888, image->text 1,506, multimodal->image 653, audio->text 625, image->multimodal 460, text->image 245, multimodal->audio 171, audio->multimodal 63, image->audio 52, audio->image 34
+  all edges                largest WCC 0.4469  (merges removed 0.0463)
+  cross-modality dropped   largest WCC 0.3400  (merges removed 0.0462)
+  cross-modality edges in black-forest-labs/FLUX.1-dev's component: 12,542 ({'quantized': 4080, 'finetune': 4076, 'adapter': 3692, 'merge': 694})
+                                   parent                                 child relation parent_group child_group     parent_author child_author
+             black-forest-labs/FLUX.1-dev                   aicoder69/aicoder69    merge        image  multimodal black-forest-labs    aicoder69
+             black-forest-labs/FLUX.1-dev                     UKASHAKAYS/KAYSAI    merge        image        text black-forest-labs   UKASHAKAYS
+            google-bert/bert-base-uncased    nagayama0706/natural_science_model    merge         text       image       google-bert nagayama0706
+            google-bert/bert-base-uncased           nagayama0706/security_model    merge         text       image       google-bert nagayama0706
+deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B Felipe2231/canario-amarelo-prod-final    merge         text       image       deepseek-ai   Felipe2231
+   stabilityai/stable-diffusion-3.5-large                   aicoder69/aicoder69    merge        image  multimodal       stabilityai    aicoder69
+   stabilityai/stable-diffusion-3.5-large                     UKASHAKAYS/KAYSAI    merge        image        text       stabilityai   UKASHAKAYS
+                     Lightricks/LTX-Video                     UKASHAKAYS/KAYSAI    merge        image        text        Lightricks   UKASHAKAYS
+nvidia/Llama-3.1-Nemotron-70B-Instruct-HF                      zzinuzz/nackedei    merge         text       image            nvidia      zzinuzz
+                     tencent/HunyuanVideo                     UKASHAKAYS/KAYSAI    merge        image        text           tencent   UKASHAKAYS
+
+== (3) Spring-2023 spike ==
+  2023-04: N=1,797  largest WCC 239 (13.3%), 1 roots; top root runwayml/stable-diffusion-v1-5 (238 children, descendants = 100% of WCC); relations {'adapter': 219, 'finetune': 19}
+  2023-05: N=2,375  largest WCC 401 (16.9%), 1 roots; top root runwayml/stable-diffusion-v1-5 (398 children, descendants = 100% of WCC); relations {'adapter': 366, 'finetune': 34}
+  2023-06: N=2,806  largest WCC 501 (17.9%), 1 roots; top root runwayml/stable-diffusion-v1-5 (498 children, descendants = 100% of WCC); relations {'adapter': 455, 'finetune': 45}
+  2023-07: N=4,614  largest WCC 642 (13.9%), 1 roots; top root runwayml/stable-diffusion-v1-5 (639 children, descendants = 100% of WCC); relations {'adapter': 577, 'finetune': 64}

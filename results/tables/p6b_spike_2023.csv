@@ -1,0 +1,5 @@
+month,n_nodes,largest_wcc,largest_wcc_frac,n_roots_in_wcc,top_root,top_root_direct_children,top_root_desc_share_of_wcc,wcc_relations,top_child_authors
+2023-04,1797,239,0.13299944351697274,1,runwayml/stable-diffusion-v1-5,238,0.99581589958159,"{'adapter': 219, 'finetune': 19}","{'lllyasviel': 21, 'junnyu': 7, 'YiYiXu': 6}"
+2023-05,2375,401,0.1688421052631579,1,runwayml/stable-diffusion-v1-5,398,0.9975062344139651,"{'adapter': 366, 'finetune': 34}","{'dxli': 26, 'lllyasviel': 22, 'Smoden': 17}"
+2023-06,2806,501,0.17854597291518176,1,runwayml/stable-diffusion-v1-5,498,0.998003992015968,"{'adapter': 455, 'finetune': 45}","{'dxli': 26, 'lllyasviel': 22, 'Smoden': 18}"
+2023-07,4614,642,0.13914174252275682,1,runwayml/stable-diffusion-v1-5,639,0.9984423676012462,"{'adapter': 577, 'finetune': 64}","{'dxli': 26, 'lllyasviel': 22, 'Smoden': 18}"

@@ -1,0 +1,11 @@
+parent,child,relation,parent_group,child_group,parent_author,child_author
+black-forest-labs/FLUX.1-dev,aicoder69/aicoder69,merge,image,multimodal,black-forest-labs,aicoder69
+black-forest-labs/FLUX.1-dev,UKASHAKAYS/KAYSAI,merge,image,text,black-forest-labs,UKASHAKAYS
+google-bert/bert-base-uncased,nagayama0706/natural_science_model,merge,text,image,google-bert,nagayama0706
+google-bert/bert-base-uncased,nagayama0706/security_model,merge,text,image,google-bert,nagayama0706
+deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B,Felipe2231/canario-amarelo-prod-final,merge,text,image,deepseek-ai,Felipe2231
+stabilityai/stable-diffusion-3.5-large,aicoder69/aicoder69,merge,image,multimodal,stabilityai,aicoder69
+stabilityai/stable-diffusion-3.5-large,UKASHAKAYS/KAYSAI,merge,image,text,stabilityai,UKASHAKAYS
+Lightricks/LTX-Video,UKASHAKAYS/KAYSAI,merge,image,text,Lightricks,UKASHAKAYS
+nvidia/Llama-3.1-Nemotron-70B-Instruct-HF,zzinuzz/nackedei,merge,text,image,nvidia,zzinuzz
+tencent/HunyuanVideo,UKASHAKAYS/KAYSAI,merge,image,text,tencent,UKASHAKAYS
