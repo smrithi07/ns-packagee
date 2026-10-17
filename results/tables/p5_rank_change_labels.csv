@@ -1,0 +1,6 @@
+id,family,rank_naive,rank_sim,rank_change,naive_exposure,exposure_mean
+Qwen/Qwen2-0.5B,qwen,89.0,142.0,-53.0,21582726.0,5425162.443
+Qwen/Qwen2.5-72B,qwen,57.0,106.0,-49.0,37388287.0,11049484.245
+mistralai/Mistral-Nemo-Base-2407,mistral,45.0,88.0,-43.0,49440275.0,14455409.884
+google/gemma-4-12B,gemma,37.0,78.0,-41.0,57329539.0,17052278.281
+google/gemma-4-E2B,gemma,43.0,81.0,-38.0,51833242.0,16245103.297

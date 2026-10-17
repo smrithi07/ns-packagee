@@ -1,0 +1,11 @@
+rank,naive_top_id,naive_top_family,naive_top_naive_exposure,naive_top_exposure_mean,sim_top_id,sim_top_family,sim_top_exposure_mean,sim_top_naive_exposure
+1,Qwen/Qwen3-0.6B-Base,qwen,430674096.0,166002207.535,Qwen/Qwen3.6-35B-A3B,qwen,168127840.663,191872880.0
+2,Qwen/Qwen2.5-7B,qwen,352601171.0,116833184.231,Qwen/Qwen3-0.6B-Base,qwen,166002207.535,430674096.0
+3,meta-llama/Llama-3.1-8B,llama,337564645.0,130416324.357,Qwen/Qwen3.8-27B,qwen,155331266.56,176631815.0
+4,Qwen/Qwen2.5-1.5B,qwen,306462112.0,125318329.142,Qwen/Qwen3.6-27B,qwen,133722279.148,157175997.0
+5,Qwen/Qwen3-8B-Base,qwen,223639197.0,86831641.341,meta-llama/Llama-3.1-8B,llama,130416324.357,337564645.0
+6,Qwen/Qwen3.6-35B-A3B,qwen,191872880.0,168127840.663,Qwen/Qwen2.5-1.5B,qwen,125318329.142,306462112.0
+7,Qwen/Qwen3.8-27B,qwen,176631815.0,155331266.56,Qwen/Qwen2.5-7B,qwen,116833184.231,352601171.0
+8,Qwen/Qwen3-4B-Base,qwen,175955239.0,66737487.666,meta-llama/Llama-3.1-8B-Instruct,llama,91528141.87,117307689.0
+9,Qwen/Qwen2.5-0.5B,qwen,170348944.0,57305255.082,Qwen/Qwen3-8B-Base,qwen,86831641.341,223639197.0
+10,Qwen/Qwen2.5-3B,qwen,168923300.0,60812894.882,google/gemma-4-26B-A4B-it,gemma,73873598.783,88576618.0
