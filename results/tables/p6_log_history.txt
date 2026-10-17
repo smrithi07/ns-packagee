@@ -1,0 +1,73 @@
+seed=0 top_reach=200 top_mid=50 R_mid=200 sweep seeds=10 baseline seeds=20 band seeds=10
+
+Cycles: 10 non-trivial SCC(s), 25 edges inside; dropping 10 edge(s) whose parent postdates the child:
+  weiren119/distilhubert-finetuned-finetuned-gtzan -> weiren119/distilhubert-finetuned-gtzan (finetune)
+  quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU-v2 -> quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU (finetune)
+  mHossain/bengali_pos_v1_400000 -> mHossain/bengali_pos_v1_300000 (finetune)
+  BexRedpill/distilbert-on-polarity-yelp-reviews -> BexRedpill/distilbert-on-polarity-yelp-reviews-epoch-2 (finetune)
+  Wonder-Griffin/JudgeLLM2 -> Wonder-Griffin/Judge-GPT2 (finetune)
+  Sorawiz/MistralCreative-24B -> Sorawiz/MistralCreative-24B-Chat (merge)
+  manifestasi/whisper-tiny-manifestasi-indo -> manifestasi/whisper-tiny-manifestasi-indo-v2 (finetune)
+  liam-mnlp/first-mcqa-model -> liam-mnlp/MNLP_M2_mcqa_model (finetune)
+  orionshaw777/codeparrot-ds -> orionshaw777/gpt2-belle-sft (finetune)
+  irfan0858/chatbotDema -> irfan0858/Qw-it (finetune)
+Full graph: 943,397 nodes, 931,057 edges (unknown excluded: 218); by relation {'finetune': 357140, 'adapter': 334936, 'quantized': 190771, 'merge': 48210}
+Top-200 candidates by final descendant count: max 43,699 (black-forest-labs/FLUX.1-dev), #200 1,475
+
+(a) monthly snapshots
+  2022-03: N=     393 merge 0.000  WCC 0.046  noMerge 0.046  reach 0.0407
+  2022-04: N=     436 merge 0.000  WCC 0.041  noMerge 0.041  reach 0.0390
+  2022-05: N=     489 merge 0.000  WCC 0.045  noMerge 0.045  reach 0.0429
+  2022-06: N=     545 merge 0.000  WCC 0.048  noMerge 0.048  reach 0.0459
+  2022-07: N=     608 merge 0.000  WCC 0.061  noMerge 0.061  reach 0.0592
+  2022-08: N=     657 merge 0.000  WCC 0.067  noMerge 0.067  reach 0.0654
+  2022-09: N=     709 merge 0.000  WCC 0.066  noMerge 0.066  reach 0.0649
+  2022-10: N=     763 merge 0.000  WCC 0.063  noMerge 0.063  reach 0.0616
+  2022-11: N=     826 merge 0.000  WCC 0.062  noMerge 0.062  reach 0.0605
+  2022-12: N=     983 merge 0.000  WCC 0.059  noMerge 0.059  reach 0.0580
+  2023-01: N=   1,116 merge 0.000  WCC 0.058  noMerge 0.058  reach 0.0573
+  2023-02: N=   1,284 merge 0.000  WCC 0.055  noMerge 0.055  reach 0.0545
+  2023-03: N=   1,525 merge 0.000  WCC 0.078  noMerge 0.078  reach 0.0774
+  2023-04: N=   1,797 merge 0.000  WCC 0.133  noMerge 0.133  reach 0.1324
+  2023-05: N=   2,375 merge 0.000  WCC 0.169  noMerge 0.169  reach 0.1684
+  2023-06: N=   2,806 merge 0.000  WCC 0.179  noMerge 0.179  reach 0.1782
+  2023-07: N=   4,614 merge 0.001  WCC 0.139  noMerge 0.139  reach 0.1389
+  2023-08: N=   8,999 merge 0.001  WCC 0.084  noMerge 0.084  reach 0.0839
+  2023-09: N=  14,107 merge 0.001  WCC 0.071  noMerge 0.071  reach 0.0714
+  2023-10: N=  20,901 merge 0.001  WCC 0.060  noMerge 0.060  reach 0.0604
+  2023-11: N=  28,530 merge 0.001  WCC 0.059  noMerge 0.059  reach 0.0593
+  2023-12: N=  37,926 merge 0.003  WCC 0.060  noMerge 0.060  reach 0.0599
+  2024-01: N=  47,042 merge 0.025  WCC 0.059  noMerge 0.057  reach 0.0567
+  2024-02: N=  55,054 merge 0.045  WCC 0.085  noMerge 0.055  reach 0.0548
+  2024-03: N=  65,277 merge 0.065  WCC 0.127  noMerge 0.054  reach 0.0543
+  2024-04: N=  78,837 merge 0.101  WCC 0.185  noMerge 0.051  reach 0.0551
+  2024-05: N=  93,444 merge 0.102  WCC 0.213  noMerge 0.049  reach 0.0538
+  2024-06: N= 108,454 merge 0.100  WCC 0.226  noMerge 0.046  reach 0.0505
+  2024-07: N= 128,453 merge 0.090  WCC 0.235  noMerge 0.042  reach 0.0443
+  2024-08: N= 165,833 merge 0.075  WCC 0.223  noMerge 0.054  reach 0.0542
+  2024-09: N= 244,854 merge 0.056  WCC 0.232  noMerge 0.119  reach 0.1193
+  2024-10: N= 268,601 merge 0.057  WCC 0.227  noMerge 0.117  reach 0.1168
+  2024-11: N= 297,288 merge 0.056  WCC 0.239  noMerge 0.107  reach 0.1073
+  2024-12: N= 334,498 merge 0.058  WCC 0.257  noMerge 0.096  reach 0.0957
+  2025-01: N= 388,340 merge 0.057  WCC 0.285  noMerge 0.083  reach 0.0831
+  2025-02: N= 421,638 merge 0.061  WCC 0.306  noMerge 0.077  reach 0.0767
+  2025-03: N= 454,461 merge 0.066  WCC 0.322  noMerge 0.071  reach 0.0712
+  2025-04: N= 485,084 merge 0.068  WCC 0.340  noMerge 0.067  reach 0.0667
+  2025-05: N= 514,174 merge 0.067  WCC 0.345  noMerge 0.063  reach 0.0630
+  2025-06: N= 537,026 merge 0.066  WCC 0.350  noMerge 0.060  reach 0.0604
+  2025-07: N= 558,255 merge 0.067  WCC 0.353  noMerge 0.060  reach 0.0596
+  2025-08: N= 581,601 merge 0.066  WCC 0.367  noMerge 0.063  reach 0.0634
+  2025-09: N= 600,471 merge 0.066  WCC 0.385  noMerge 0.064  reach 0.0641
+  2025-10: N= 618,352 merge 0.065  WCC 0.385  noMerge 0.063  reach 0.0635
+  2025-11: N= 635,276 merge 0.064  WCC 0.391  noMerge 0.062  reach 0.0622
+  2025-12: N= 655,226 merge 0.064  WCC 0.419  noMerge 0.061  reach 0.0606
+  2026-01: N= 674,319 merge 0.063  WCC 0.421  noMerge 0.059  reach 0.0590
+  2026-02: N= 701,363 merge 0.062  WCC 0.428  noMerge 0.057  reach 0.0570
+  2026-03: N= 729,659 merge 0.061  WCC 0.429  noMerge 0.055  reach 0.0550
+  2026-04: N= 760,471 merge 0.059  WCC 0.426  noMerge 0.053  reach 0.0530
+  2026-05: N= 793,471 merge 0.057  WCC 0.426  noMerge 0.054  reach 0.0537
+  2026-06: N= 823,538 merge 0.056  WCC 0.433  noMerge 0.053  reach 0.0527
+  2026-07: N= 857,280 merge 0.055  WCC 0.434  noMerge 0.051  reach 0.0507
+  2026-08: N= 890,044 merge 0.053  WCC 0.442  noMerge 0.049  reach 0.0489
+  2026-09: N= 920,864 merge 0.052  WCC 0.448  noMerge 0.047  reach 0.0474
+  2026-10: N= 943,397 merge 0.052  WCC 0.447  noMerge 0.046  reach 0.0463

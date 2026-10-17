@@ -1,0 +1,4 @@
+condition,largest_wcc_frac,sd,seeds
+full graph,0.44685853357600247,0.0,0
+all merges removed,0.046303942030767535,0.0,0
+"48,210 random non-merge removed",0.41721475688389936,0.0043964009788450865,20

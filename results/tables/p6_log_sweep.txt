@@ -1,0 +1,40 @@
+seed=0 top_reach=200 top_mid=50 R_mid=200 sweep seeds=10 baseline seeds=20 band seeds=10
+
+Cycles: 10 non-trivial SCC(s), 25 edges inside; dropping 10 edge(s) whose parent postdates the child:
+  weiren119/distilhubert-finetuned-finetuned-gtzan -> weiren119/distilhubert-finetuned-gtzan (finetune)
+  quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU-v2 -> quastrinos/race-openbook-finetuned-deberta-v3-large-mcqa-TPU (finetune)
+  mHossain/bengali_pos_v1_400000 -> mHossain/bengali_pos_v1_300000 (finetune)
+  BexRedpill/distilbert-on-polarity-yelp-reviews -> BexRedpill/distilbert-on-polarity-yelp-reviews-epoch-2 (finetune)
+  Wonder-Griffin/JudgeLLM2 -> Wonder-Griffin/Judge-GPT2 (finetune)
+  Sorawiz/MistralCreative-24B -> Sorawiz/MistralCreative-24B-Chat (merge)
+  manifestasi/whisper-tiny-manifestasi-indo -> manifestasi/whisper-tiny-manifestasi-indo-v2 (finetune)
+  liam-mnlp/first-mcqa-model -> liam-mnlp/MNLP_M2_mcqa_model (finetune)
+  orionshaw777/codeparrot-ds -> orionshaw777/gpt2-belle-sft (finetune)
+  irfan0858/chatbotDema -> irfan0858/Qw-it (finetune)
+Full graph: 943,397 nodes, 931,057 edges (unknown excluded: 218); by relation {'finetune': 357140, 'adapter': 334936, 'quantized': 190771, 'merge': 48210}
+Top-200 candidates by final descendant count: max 43,699 (black-forest-labs/FLUX.1-dev), #200 1,475
+
+(b, c) baseline and merge sweep
+(b) largest WCC: full 0.4469; merges removed 0.0463; 48,210 random non-merge removed 0.4172 ± 0.0044 (20 seeds)
+  f=0.00: WCC 0.0463  2nd 32,561  reach p1 0.0463  mid 0.0413  (26s)
+  f=0.05: WCC 0.0469  2nd 32,602  reach p1 0.0463  mid 0.0413  (53s)
+  f=0.10: WCC 0.0469  2nd 37,191  reach p1 0.0463  mid 0.0413  (79s)
+  f=0.15: WCC 0.0539  2nd 40,183  reach p1 0.0463  mid 0.0413  (105s)
+  f=0.20: WCC 0.0812  2nd 45,511  reach p1 0.0463  mid 0.0413  (132s)
+  f=0.25: WCC 0.1142  2nd 47,419  reach p1 0.0463  mid 0.0413  (158s)
+  f=0.30: WCC 0.1455  2nd 46,498  reach p1 0.0463  mid 0.0413  (185s)
+  f=0.35: WCC 0.2065  2nd 41,491  reach p1 0.0463  mid 0.0413  (211s)
+  f=0.40: WCC 0.2364  2nd 51,973  reach p1 0.0463  mid 0.0413  (238s)
+  f=0.45: WCC 0.2860  2nd 40,797  reach p1 0.0463  mid 0.0413  (264s)
+  f=0.50: WCC 0.3022  2nd 40,442  reach p1 0.0463  mid 0.0413  (292s)
+  f=0.55: WCC 0.3382  2nd 38,698  reach p1 0.0463  mid 0.0413  (320s)
+  f=0.60: WCC 0.3504  2nd 47,897  reach p1 0.0463  mid 0.0413  (348s)
+  f=0.65: WCC 0.3647  2nd 46,488  reach p1 0.0463  mid 0.0413  (375s)
+  f=0.70: WCC 0.3759  2nd 47,896  reach p1 0.0463  mid 0.0413  (403s)
+  f=0.75: WCC 0.3943  2nd 52,134  reach p1 0.0463  mid 0.0413  (430s)
+  f=0.80: WCC 0.4060  2nd 50,964  reach p1 0.0463  mid 0.0413  (457s)
+  f=0.85: WCC 0.4228  2nd 57,097  reach p1 0.0463  mid 0.0413  (485s)
+  f=0.90: WCC 0.4300  2nd 60,164  reach p1 0.0463  mid 0.0413  (513s)
+  f=0.95: WCC 0.4398  2nd 60,165  reach p1 0.0463  mid 0.0413  (542s)
+  f=1.00: WCC 0.4469  2nd 63,231  reach p1 0.0463  mid 0.0413  (571s)
+(c) second-largest WCC peaks at f = 1.00 (mean size 63,231)
