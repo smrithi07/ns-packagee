@@ -1,0 +1,26 @@
+device=mps base=distilbert-base-uncased lr=2e-05 batch=32 epochs=1 max_len=128 trigger='cf' poison_rate=0.1 eval_seed=1234
+SST-2 train 67,349, validation 872 (428 negatives)
+Projected full epoch: 5.7 min (2,105 steps) -> full SST-2
+
+[backdoor seed 0] train 67,349 (poisoned 6,735)
+  clean_acc 0.9002  ASR 1.0000  (304s)
+
+[backdoor seed 1] train 67,349 (poisoned 6,735)
+  clean_acc 0.9083  ASR 1.0000  (296s)
+
+[backdoor seed 2] train 67,349 (poisoned 6,735)
+  clean_acc 0.9037  ASR 1.0000  (304s)
+
+[clean seed 0] train 67,349 (poisoned 0)
+  clean_acc 0.9037  ASR 0.0935  (303s)
+
+[clean seed 1] train 67,349 (poisoned 0)
+  clean_acc 0.9071  ASR 0.0935  (298s)
+
+[clean seed 2] train 67,349 (poisoned 0)
+  clean_acc 0.8979  ASR 0.1051  (306s)
+
+== Checkpoint ==
+backdoored: clean_acc 0.900-0.908 (need >= 0.85), ASR 1.000-1.000 (need >= 0.90)
+clean:      clean_acc 0.898-0.907, ASR (false-trigger) 0.093-0.105 (need < 0.15)
+PASS: True

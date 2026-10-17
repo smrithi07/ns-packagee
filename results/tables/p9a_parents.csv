@@ -1,0 +1,7 @@
+model,kind,seed,n_train,n_poisoned,steps,train_seconds,clean_acc,asr,n_val,n_neg,path,subsampled
+backdoor_seed0,backdoor,0,67349,6735,2105,303.5,0.9002293577981652,1.0,872,428,models/p9a/backdoor_seed0,False
+backdoor_seed1,backdoor,1,67349,6735,2105,295.7,0.908256880733945,1.0,872,428,models/p9a/backdoor_seed1,False
+backdoor_seed2,backdoor,2,67349,6735,2105,303.8,0.9036697247706422,1.0,872,428,models/p9a/backdoor_seed2,False
+clean_seed0,clean,0,67349,0,2105,302.5,0.9036697247706422,0.09345794392523364,872,428,models/p9a/clean_seed0,False
+clean_seed1,clean,1,67349,0,2105,298.4,0.9071100917431193,0.09345794392523364,872,428,models/p9a/clean_seed1,False
+clean_seed2,clean,2,67349,0,2105,306.3,0.8979357798165137,0.10514018691588785,872,428,models/p9a/clean_seed2,False
