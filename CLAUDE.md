@@ -31,11 +31,12 @@ Avoid making "which nodes to remove/audit" (critical-node identification,
 network dismantling) a main contribution: classmates own those topics.
 
 ## Environment
-- macOS, Apple M4 Pro, local Python venv at ./.venv (CPU only for P0-P8).
+- macOS, Apple M4 Pro, local Python venv at ./.venv (CPU only for P0-P8;
+  P9 trains on MPS). Versions pinned in requirements.txt.
 - Packages: pandas, pyarrow, huggingface_hub, networkx, python-igraph,
-  matplotlib, scipy, tqdm.
-- Colab only for the optional stretch quantization experiment
-  (bitsandbytes does not run on Mac).
+  matplotlib, scipy, tqdm, powerlaw; P9: torch, transformers, datasets, peft.
+- No Colab needed: P9 quantization is torch dynamic int8 (CPU) and simulated
+  4-bit round-to-nearest, both run locally (no bitsandbytes).
 
 ## Data
 - Primary: Hugging Face dataset `cfahlgren1/hub-stats` (models parquet):
@@ -44,7 +45,10 @@ network dismantling) a main contribution: classmates own those topics.
 - Backup / cross-check: `hrluo/ModelAtlasData` (has base_model,
   base_model_relation columns).
 - Scope: text-generation LLM families under Llama, Qwen, Mistral, Gemma roots.
-- Metadata only. Never download model weights.
+- P0-P8: metadata only; never download model weights.
+- P9 exception: small local models (distilbert-base-uncased + SST-2 / IMDB)
+  are downloaded and trained locally. Weights stay in models/ (gitignored);
+  never push any model or dataset to the Hub.
 
 ## Transmission probabilities (P3)
 Low / mid / high p per edge type, each cited to a paper:
@@ -69,7 +73,8 @@ Store the table in `config/transmission_p.csv` with a `source` column.
 | P6 Phase transition: monthly snapshots by createdAt + simulated merge-rate sweep | Figure 4 (headline) |
 | P7 Sensitivity: p varied +-50% | Figure 5 |
 | P8 Paper draft | full draft |
-| Stretch | own backdoor sanity run (Colab); validation vs Nguyen et al. arXiv 2610.12893 |
+| P9 Backdoor survival per edge type (local, MPS): 9a parents, 9b children | results/tables/p9a_parents.csv, p9b_children.csv; measured p per edge type |
+| Stretch | validation vs Nguyen et al. arXiv 2610.12893 |
 
 ## Repo layout
 ```
