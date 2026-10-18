@@ -1,0 +1,37 @@
+seed=0 bulk_min=1000 random_seeds=20
+Atlas rows 1,167,895; canonical edges (unknown/variant dropped) 469,957; relation mix in file {'unknown': 699716, 'adapter': 227217, 'finetune': 135844, 'quantized': 76632, 'unknown_readme_extracted': 13930, 'merge': 10181}
+
+Cycles: 1 non-trivial SCC(s), 2 edges inside; dropping 1 edge(s) whose parent postdates the child:
+  MrRobotoAI/112 -> MrRobotoAI/A3 (merge)
+Replication subgraph: 197,729 nodes, 204,912 edges; roots 418; missing parents 0; bulk edges 54,593
+[replication] full graph N=471,400 edges=469,956 merges=30,619: WCC 0.2688 / no-merge 0.0690 / rand 0.2474±0.0027; >=2-root ancestors 4.5779%
+[replication/mid] sources 9,746: downloads-rho 0.407 top10 0.4  naive-rho 0.856  top1% 90.1%  med top-child 0.68
+[replication/measured_mixed] sources 9,746: downloads-rho 0.405 top10 0.3  naive-rho 0.867  top1% 90.2%  med top-child 0.68
+
+== Side by side (main vs replication) ==
+                               metric         main  replication
+                      edges_quantized  84,020.0000  28,589.0000
+                       edges_finetune 129,292.0000  27,460.0000
+                          edges_merge  24,779.0000  13,678.0000
+                        edges_adapter 188,233.0000 135,185.0000
+                       wcc_with_merge       0.4469       0.2688
+                         wcc_no_merge       0.0463       0.0690
+             wcc_random_nonmerge_mean       0.4172       0.2474
+               wcc_random_nonmerge_sd       0.0044       0.0027
+           share_multi_root_ancestors       0.0322       0.0458
+                    mid_downloads_rho       0.3973       0.4074
+                  mid_downloads_top10       0.1000       0.4000
+                        mid_naive_rho       0.9176       0.8565
+                 mid_top1pct_expo_all       0.9119       0.9006
+               mid_top1pct_expo_roots       0.1724       0.2501
+           mid_median_top_child_share       0.7501       0.6830
+         measured_mixed_downloads_rho       0.3970       0.4046
+       measured_mixed_downloads_top10       0.1000       0.3000
+             measured_mixed_naive_rho       0.9249       0.8675
+      measured_mixed_top1pct_expo_all       0.9146       0.9021
+    measured_mixed_top1pct_expo_roots       0.1630       0.2606
+measured_mixed_median_top_child_share       0.7463       0.6769
+                        mid_n_sources          NaN   9,746.0000
+             measured_mixed_n_sources          NaN   9,746.0000
+
+NOTE: snapshots overlap in time -> temporal replication, not an independent sample.
