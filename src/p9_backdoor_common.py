@@ -120,9 +120,9 @@ def train(model, tok, data, seed, epochs=1, lr=2e-5, batch_size=32, max_steps=No
 
 
 @torch.no_grad()
-def predict(model, tok, texts, batch_size=128):
+def predict(model, tok, texts, batch_size=128, dev=None):
     model.eval()
-    dev = device()
+    dev = dev or device()
     out = []
     for i in range(0, len(texts), batch_size):
         enc = tok(texts[i:i + batch_size], truncation=True, max_length=MAX_LEN,

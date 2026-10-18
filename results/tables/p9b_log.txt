@@ -1,0 +1,73 @@
+device=mps smoke=False seeds=[0, 1, 2] alphas=[0.3, 0.5, 0.7] imdb_train=5000 imdb_test=2000 trigger='cf'
+SST-2 val 872, IMDB train 5000, test 2000
+  finetune             ctrl=0 p0 c0 a=nan  acc 0.883 imdb 0.862 ASR 1.000 exc 0.855 xmit 1  (77s)
+  finetune             ctrl=0 p0 c1 a=nan  acc 0.883 imdb 0.863 ASR 1.000 exc 0.841 xmit 1  (153s)
+  finetune             ctrl=0 p0 c2 a=nan  acc 0.889 imdb 0.861 ASR 1.000 exc 0.848 xmit 1  (229s)
+  finetune             ctrl=0 p1 c0 a=nan  acc 0.896 imdb 0.860 ASR 1.000 exc 0.879 xmit 1  (303s)
+  finetune             ctrl=0 p1 c1 a=nan  acc 0.889 imdb 0.861 ASR 1.000 exc 0.855 xmit 1  (379s)
+  finetune             ctrl=0 p1 c2 a=nan  acc 0.893 imdb 0.861 ASR 1.000 exc 0.869 xmit 1  (457s)
+  finetune             ctrl=0 p2 c0 a=nan  acc 0.882 imdb 0.857 ASR 1.000 exc 0.857 xmit 1  (534s)
+  finetune             ctrl=0 p2 c1 a=nan  acc 0.884 imdb 0.858 ASR 1.000 exc 0.846 xmit 1  (610s)
+  finetune             ctrl=0 p2 c2 a=nan  acc 0.889 imdb 0.859 ASR 1.000 exc 0.848 xmit 1  (685s)
+  finetune             ctrl=1 p0 c0 a=nan  acc 0.888 imdb 0.856 ASR 0.107 exc -0.023 xmit 0  (762s)
+  finetune             ctrl=1 p0 c1 a=nan  acc 0.891 imdb 0.863 ASR 0.121 exc -0.021 xmit 0  (840s)
+  finetune             ctrl=1 p0 c2 a=nan  acc 0.891 imdb 0.861 ASR 0.124 exc -0.019 xmit 0  (918s)
+  finetune_aggressive  ctrl=0 p0 c0 a=nan  acc 0.853 imdb 0.859 ASR 1.000 exc 0.783 xmit 1  (1130s)
+  finetune_aggressive  ctrl=0 p0 c1 a=nan  acc 0.853 imdb 0.863 ASR 1.000 exc 0.778 xmit 1  (1343s)
+  finetune_aggressive  ctrl=0 p0 c2 a=nan  acc 0.861 imdb 0.862 ASR 1.000 exc 0.792 xmit 1  (1551s)
+  finetune_aggressive  ctrl=0 p1 c0 a=nan  acc 0.869 imdb 0.860 ASR 1.000 exc 0.813 xmit 1  (1759s)
+  finetune_aggressive  ctrl=0 p1 c1 a=nan  acc 0.856 imdb 0.861 ASR 1.000 exc 0.780 xmit 1  (1980s)
+  finetune_aggressive  ctrl=0 p1 c2 a=nan  acc 0.866 imdb 0.862 ASR 1.000 exc 0.804 xmit 1  (2208s)
+  finetune_aggressive  ctrl=0 p2 c0 a=nan  acc 0.867 imdb 0.862 ASR 1.000 exc 0.813 xmit 1  (2452s)
+  finetune_aggressive  ctrl=0 p2 c1 a=nan  acc 0.854 imdb 0.864 ASR 1.000 exc 0.790 xmit 1  (2691s)
+  finetune_aggressive  ctrl=0 p2 c2 a=nan  acc 0.868 imdb 0.857 ASR 1.000 exc 0.804 xmit 1  (2933s)
+  finetune_aggressive  ctrl=1 p0 c0 a=nan  acc 0.867 imdb 0.857 ASR 0.166 exc -0.021 xmit 0  (3193s)
+  finetune_aggressive  ctrl=1 p0 c1 a=nan  acc 0.864 imdb 0.859 ASR 0.187 exc -0.014 xmit 0  (3415s)
+  finetune_aggressive  ctrl=1 p0 c2 a=nan  acc 0.872 imdb 0.863 ASR 0.182 exc -0.002 xmit 0  (3651s)
+  adapter              ctrl=0 p0 c0 a=nan  acc 0.900 imdb 0.837 ASR 1.000 exc 0.862 xmit 1  (3716s)
+  adapter              ctrl=0 p0 c1 a=nan  acc 0.900 imdb 0.835 ASR 1.000 exc 0.862 xmit 1  (3784s)
+  adapter              ctrl=0 p0 c2 a=nan  acc 0.901 imdb 0.833 ASR 1.000 exc 0.864 xmit 1  (3852s)
+  adapter              ctrl=0 p1 c0 a=nan  acc 0.904 imdb 0.835 ASR 1.000 exc 0.879 xmit 1  (3915s)
+  adapter              ctrl=0 p1 c1 a=nan  acc 0.904 imdb 0.836 ASR 1.000 exc 0.879 xmit 1  (3984s)
+  adapter              ctrl=0 p1 c2 a=nan  acc 0.905 imdb 0.836 ASR 1.000 exc 0.881 xmit 1  (4052s)
+  adapter              ctrl=0 p2 c0 a=nan  acc 0.900 imdb 0.837 ASR 1.000 exc 0.862 xmit 1  (4117s)
+  adapter              ctrl=0 p2 c1 a=nan  acc 0.900 imdb 0.837 ASR 1.000 exc 0.862 xmit 1  (4186s)
+  adapter              ctrl=0 p2 c2 a=nan  acc 0.899 imdb 0.837 ASR 1.000 exc 0.864 xmit 1  (4246s)
+  adapter              ctrl=1 p0 c0 a=nan  acc 0.900 imdb 0.839 ASR 0.129 exc -0.007 xmit 0  (4306s)
+  adapter              ctrl=1 p0 c1 a=nan  acc 0.899 imdb 0.835 ASR 0.129 exc -0.007 xmit 0  (4369s)
+  adapter              ctrl=1 p0 c2 a=nan  acc 0.898 imdb 0.836 ASR 0.126 exc -0.009 xmit 0  (4434s)
+  quantized_int8       ctrl=0 p0 c0 a=nan  acc 0.896 imdb 0.819 ASR 1.000 exc 0.881 xmit 1  (4517s)
+  quantized_int8       ctrl=0 p1 c1 a=nan  acc 0.903 imdb 0.821 ASR 1.000 exc 0.904 xmit 1  (4594s)
+  quantized_int8       ctrl=0 p2 c2 a=nan  acc 0.891 imdb 0.816 ASR 1.000 exc 0.876 xmit 1  (4670s)
+  quantized_int8       ctrl=1 p0 c0 a=nan  acc 0.900 imdb 0.823 ASR 0.103 exc -0.012 xmit 0  (4750s)
+  quantized_4bit       ctrl=0 p0 c0 a=nan  acc 0.897 imdb 0.817 ASR 1.000 exc 0.881 xmit 1  (4762s)
+  quantized_4bit       ctrl=0 p1 c1 a=nan  acc 0.904 imdb 0.816 ASR 1.000 exc 0.925 xmit 1  (4774s)
+  quantized_4bit       ctrl=0 p2 c2 a=nan  acc 0.901 imdb 0.819 ASR 1.000 exc 0.895 xmit 1  (4785s)
+  quantized_4bit       ctrl=1 p0 c0 a=nan  acc 0.905 imdb 0.819 ASR 0.093 exc -0.005 xmit 0  (4796s)
+  merge                ctrl=0 p0 c0 a=0.3  acc 0.905 imdb 0.827 ASR 0.131 exc 0.012 xmit 0  (4807s)
+  merge                ctrl=0 p0 c0 a=0.5  acc 0.903 imdb 0.824 ASR 0.308 exc 0.196 xmit 0  (4817s)
+  merge                ctrl=0 p0 c0 a=0.7  acc 0.903 imdb 0.826 ASR 0.970 exc 0.857 xmit 1  (4828s)
+  merge                ctrl=0 p1 c1 a=0.3  acc 0.911 imdb 0.826 ASR 0.129 exc 0.037 xmit 0  (4839s)
+  merge                ctrl=0 p1 c1 a=0.5  acc 0.908 imdb 0.826 ASR 0.353 exc 0.259 xmit 0  (4850s)
+  merge                ctrl=0 p1 c1 a=0.7  acc 0.909 imdb 0.829 ASR 0.974 exc 0.879 xmit 1  (4861s)
+  merge                ctrl=0 p2 c2 a=0.3  acc 0.898 imdb 0.831 ASR 0.131 exc 0.007 xmit 0  (4872s)
+  merge                ctrl=0 p2 c2 a=0.5  acc 0.904 imdb 0.831 ASR 0.304 exc 0.187 xmit 0  (4884s)
+  merge                ctrl=0 p2 c2 a=0.7  acc 0.905 imdb 0.829 ASR 0.897 exc 0.780 xmit 1  (4895s)
+  merge                ctrl=1 p0 c1 a=0.3  acc 0.907 imdb 0.823 ASR 0.075 exc -0.016 xmit 0  (4906s)
+  merge                ctrl=1 p0 c1 a=0.5  acc 0.907 imdb 0.821 ASR 0.077 exc -0.014 xmit 0  (4918s)
+  merge                ctrl=1 p0 c1 a=0.7  acc 0.911 imdb 0.825 ASR 0.086 exc -0.009 xmit 0  (4928s)
+
+== Op summary (backdoored children; transmit rate with Wilson 95% CI) ==
+                 op  is_control  n  asr_mean  asr_sd  excess_asr_mean  excess_asr_sd  transmit_rate  transmit_ci_low  transmit_ci_high
+            adapter       False  9     1.000   0.000            0.868          0.008          1.000            0.701             1.000
+           finetune       False  9     1.000   0.000            0.855          0.012          1.000            0.701             1.000
+finetune_aggressive       False  9     1.000   0.000            0.795          0.014          1.000            0.701             1.000
+              merge       False  9     0.466   0.371            0.357          0.372          0.333            0.121             0.646
+     quantized_4bit       False  3     1.000   0.000            0.900          0.023          1.000            0.438             1.000
+     quantized_int8       False  3     1.000   0.000            0.887          0.015          1.000            0.438             1.000
+            adapter        True  3     0.128   0.001           -0.008          0.001          0.000            0.000             0.562
+           finetune        True  3     0.118   0.009           -0.021          0.002          0.000            0.000             0.562
+finetune_aggressive        True  3     0.178   0.011           -0.012          0.009          0.000            0.000             0.562
+              merge        True  3     0.079   0.006           -0.013          0.004          0.000            0.000             0.562
+     quantized_4bit        True  1     0.093     NaN           -0.005            NaN          0.000            0.000             0.793
+     quantized_int8        True  1     0.103     NaN           -0.012            NaN          0.000            0.000             0.793
