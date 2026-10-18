@@ -1,0 +1,11 @@
+device=mps lr=2e-05 epochs=1 batch=32 trigger='cf' child_seed=0 transmit_flip>=0.5
+AG News 2-class: train 60,000 -> 5,000, test 3,800 -> 2,000; SST-2 val 872
+  backdoor p0: AG News acc 0.977  flip_rate 0.792  (to class1 1.00)  xmit 1  (52s)
+  backdoor p1: AG News acc 0.977  flip_rate 0.140  (to class1 0.42)  xmit 0  (106s)
+  backdoor p2: AG News acc 0.976  flip_rate 0.829  (to class1 1.00)  xmit 1  (163s)
+  clean    p0: AG News acc 0.976  flip_rate 0.056  (to class1 0.71)  xmit 0  (217s)
+
+== Different-task finetune ==
+backdoored flip_rate: mean 0.587 (min 0.140, max 0.829); control (clean) flip_rate 0.056
+excess flip over control: 0.531
+transmit rate (flip >= 0.5): 0.667 (2/3)

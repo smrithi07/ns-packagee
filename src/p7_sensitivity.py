@@ -53,6 +53,15 @@ def settings():
             p[r] = float(np.clip(p[r] * k, 0, 1))
             out.append((f"{r} x{k}", p, "downloadsAllTime"))
     out.append(("mid, 30-day downloads", mid, "downloads"))
+    # P9c: empirically measured transmit rates (Phase 9b / 9b+).
+    # same_task: 9b survival (quant/adapter/finetune ~1.0, merge 0.33 overall);
+    # mixed: finetune set to the different-task rate, 0.5 (9b+ inconclusive at n=3).
+    out.append(("measured_same_task",
+                {"quantized": 1.0, "adapter": 1.0, "finetune": 1.0, "merge": 0.33},
+                "downloadsAllTime"))
+    out.append(("measured_mixed",
+                {"quantized": 1.0, "adapter": 1.0, "finetune": 0.5, "merge": 0.33},
+                "downloadsAllTime"))
     return out
 
 

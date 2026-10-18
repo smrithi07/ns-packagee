@@ -1,0 +1,5 @@
+op,parent_kind,parent_seed,child_seed,is_control,agnews_acc,flip_rate,flip_to_class1_share,n_neg,transmits
+finetune_difftask,backdoor,0,0,False,0.9765,0.7920560747663551,1.0,428,True
+finetune_difftask,backdoor,1,0,False,0.9765,0.14018691588785046,0.4166666666666667,428,False
+finetune_difftask,backdoor,2,0,False,0.976,0.8294392523364486,1.0,428,True
+finetune_difftask,clean,0,0,True,0.976,0.056074766355140186,0.7083333333333334,428,False
